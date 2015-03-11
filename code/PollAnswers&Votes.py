@@ -7,7 +7,7 @@ Created on Sun Jan 25 17:20:19 2015
 
 # read in data
 import pandas as pd
-data = pd.read_csv('poll.csv')
+data = pd.read_csv('poll3.csv')
 
 # pollAnswer field is a JSON object
 # read the Sony pollAnswer into an object called 'sony'
@@ -19,7 +19,7 @@ type(sony)              # it's a list
 len(sony)               # length is 4
 type(sony[0])           # each list element is a dictionary
 sony[0]['answerText']   # that dictionary has the answerText
-len(sony[0]['votes'])   # you can easy calculate the number of votes for that answer
+len(sony[0]['votes'])   # calculate the number of votes for that answer
 
 data.head()
 for i in range(0,len(data)):
